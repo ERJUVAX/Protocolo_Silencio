@@ -75,19 +75,38 @@
             border: none;
             border-radius: 15px;
         }
+        /* DISEÑO DE CONTENIDO DE LA SECCION DEL PROYECTO */
+        
+        .about-card {
+            background: #ccd2d5;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 10px 10px 25px rgba(28, 33, 96, 0.3), -10px -10px 25px rgba(255, 255, 255, 0.6);
+        }
+        
+        .about-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-card {
+                padding: 2rem;
+            }
+        }
         /* Reducir tamaño del título en móviles para que no se parta */
-@media (max-width: 480px) {
-  .hero .title {
-    font-size: 2rem !important;
-    line-height: 1.1;
-    word-break: normal;
-    white-space: normal;
-  }
-
-  .hero .subtitle {
-    font-size: 1rem !important;
-  }
-}
+        
+        @media (max-width: 480px) {
+            .hero .title {
+                font-size: 2rem !important;
+                line-height: 1.1;
+                word-break: normal;
+                white-space: normal;
+            }
+            .hero .subtitle {
+                font-size: 1rem !important;
+            }
+        }
     </style>
 </head>
 
@@ -103,7 +122,43 @@
             </div>
         </div>
     </section>
+    <!-- TRAILER-->
+    <section class="section">
+        <div class="container">
+            <h2 class="title">TRAILER</h2>
+            <video autoplay muted loop controls width="100%">
+            <source src="trailer.mp4" type="video/mp4"/>
+          </video>
+        </div>
+    </section>
+    <!-- SOBRE EL PROYECTO -->
+    <section class="section">
+        <div class="container">
+            <div class="about-card">
+                <h2 class="title is-size-3 has-text-centered">Sobre el Proyecto</h2>
 
+                <div class="content">
+                    <p>
+                        <strong>Protocolo Silencio</strong> es un prototipo de videojuego de sigilo isométrico desarrollado como parte de un proceso de exploración en un club de diseño y desarrollo de videojuegos dirigido por ERJUVAX GAMES en colaboracion
+                        con jorge burgos y kristhiano.
+                    </p>
+
+                    <p>
+                        El proyecto nace bajo el concepto de una <strong>distopía tecnológica</strong>, donde el jugador debe infiltrarse en entornos controlados por sistemas de vigilancia, utilizando el sigilo, la observación estratégica y la toma de
+                        decisiones cuidadosa para sobrevivir.
+                    </p>
+
+                    <p>
+                        Fue desarrollado en <strong>Unity 6.3 LTS</strong>, implementando mecánicas de detección, visión enemiga, desplazamiento táctico y diseño de niveles enfocado en tensión y planificación.
+                    </p>
+
+                    <p>
+                        Este proyecto representa una etapa de experimentación y aprendizaje, enfocado en el diseño de mecánicas, ambientación y experiencia de usuario.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- SECCION JUEGO -->
     <section id="game" class="section">
         <div class="container">
